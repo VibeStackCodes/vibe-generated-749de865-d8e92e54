@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #003d82;
+  --brand-accent: #FF6B00;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system;
+  background-color: #f8fafc;
+  color: #111827;
+}
+
+/* Utility tweaks for brand colors in Tailwind context */
+.bg-primary { background-color: var(--brand-primary); }
+.text-primary { color: var(--brand-primary); }
+.bg-accent { background-color: var(--brand-accent); }
+.text-accent { color: var(--brand-accent); }
